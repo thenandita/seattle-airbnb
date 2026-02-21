@@ -4,6 +4,8 @@
 <workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
     <ObjectModelTableType />
@@ -16,109 +18,247 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Listings (Tableau Full Project)' inline='true' name='federated.0tfeon50qrdjx113qd3yj1r05360' version='18.1'>
+    <datasource caption='Listings+ (Tableau Full Project)' inline='true' name='federated.09w1hpr02mo5hx1fmg5bd0b87kiq' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='Tableau Full Project' name='excel-direct.0lp3s2l16d33hk13dom511awmc9w'>
+          <named-connection caption='Tableau Full Project' name='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2'>
             <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/nandita/Downloads/Tableau Full Project.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
-        <relation connection='excel-direct.0lp3s2l16d33hk13dom511awmc9w' name='Listings' table='[Listings$]' type='table'>
-          <columns gridOrigin='A1:CN3819:no:A1:CN3819:0' header='yes' outcome='2'>
-            <column datatype='integer' name='id' ordinal='0' />
-            <column datatype='string' name='listing_url' ordinal='1' />
-            <column datatype='integer' name='scrape_id' ordinal='2' />
-            <column datatype='date' name='last_scraped' ordinal='3' />
-            <column datatype='string' name='name' ordinal='4' />
-            <column datatype='string' name='summary' ordinal='5' />
-            <column datatype='string' name='space' ordinal='6' />
-            <column datatype='string' name='description' ordinal='7' />
-            <column datatype='string' name='experiences_offered' ordinal='8' />
-            <column datatype='string' name='neighborhood_overview' ordinal='9' />
-            <column datatype='string' name='notes' ordinal='10' />
-            <column datatype='string' name='transit' ordinal='11' />
-            <column datatype='string' name='thumbnail_url' ordinal='12' />
-            <column datatype='string' name='medium_url' ordinal='13' />
-            <column datatype='string' name='picture_url' ordinal='14' />
-            <column datatype='string' name='xl_picture_url' ordinal='15' />
-            <column datatype='integer' name='host_id' ordinal='16' />
-            <column datatype='string' name='host_url' ordinal='17' />
-            <column datatype='string' name='host_name' ordinal='18' />
-            <column datatype='date' name='host_since' ordinal='19' />
-            <column datatype='string' name='host_location' ordinal='20' />
-            <column datatype='string' name='host_about' ordinal='21' />
-            <column datatype='string' name='host_response_time' ordinal='22' />
-            <column datatype='string' name='host_response_rate' ordinal='23' />
-            <column datatype='string' name='host_acceptance_rate' ordinal='24' />
-            <column datatype='string' name='host_is_superhost' ordinal='25' />
-            <column datatype='string' name='host_thumbnail_url' ordinal='26' />
-            <column datatype='string' name='host_picture_url' ordinal='27' />
-            <column datatype='string' name='host_neighbourhood' ordinal='28' />
-            <column datatype='integer' name='host_listings_count' ordinal='29' />
-            <column datatype='integer' name='host_total_listings_count' ordinal='30' />
-            <column datatype='string' name='host_verifications' ordinal='31' />
-            <column datatype='string' name='host_has_profile_pic' ordinal='32' />
-            <column datatype='string' name='host_identity_verified' ordinal='33' />
-            <column datatype='string' name='street' ordinal='34' />
-            <column datatype='string' name='neighbourhood' ordinal='35' />
-            <column datatype='string' name='neighbourhood_cleansed' ordinal='36' />
-            <column datatype='string' name='neighbourhood_group_cleansed' ordinal='37' />
-            <column datatype='string' name='city' ordinal='38' />
-            <column datatype='string' name='state' ordinal='39' />
-            <column datatype='integer' name='zipcode' ordinal='40' />
-            <column datatype='string' name='market' ordinal='41' />
-            <column datatype='string' name='smart_location' ordinal='42' />
-            <column datatype='string' name='country_code' ordinal='43' />
-            <column datatype='string' name='country' ordinal='44' />
-            <column datatype='real' name='latitude' ordinal='45' />
-            <column datatype='real' name='longitude' ordinal='46' />
-            <column datatype='string' name='is_location_exact' ordinal='47' />
-            <column datatype='string' name='property_type' ordinal='48' />
-            <column datatype='string' name='room_type' ordinal='49' />
-            <column datatype='integer' name='accommodates' ordinal='50' />
-            <column datatype='real' name='bathrooms' ordinal='51' />
-            <column datatype='integer' name='bedrooms' ordinal='52' />
-            <column datatype='integer' name='beds' ordinal='53' />
-            <column datatype='string' name='bed_type' ordinal='54' />
-            <column datatype='string' name='amenities' ordinal='55' />
-            <column datatype='integer' name='square_feet' ordinal='56' />
-            <column datatype='integer' name='price' ordinal='57' />
-            <column datatype='integer' name='weekly_price' ordinal='58' />
-            <column datatype='integer' name='monthly_price' ordinal='59' />
-            <column datatype='integer' name='security_deposit' ordinal='60' />
-            <column datatype='integer' name='cleaning_fee' ordinal='61' />
-            <column datatype='integer' name='guests_included' ordinal='62' />
-            <column datatype='integer' name='extra_people' ordinal='63' />
-            <column datatype='integer' name='minimum_nights' ordinal='64' />
-            <column datatype='integer' name='maximum_nights' ordinal='65' />
-            <column datatype='string' name='calendar_updated' ordinal='66' />
-            <column datatype='string' name='has_availability' ordinal='67' />
-            <column datatype='integer' name='availability_30' ordinal='68' />
-            <column datatype='integer' name='availability_60' ordinal='69' />
-            <column datatype='integer' name='availability_90' ordinal='70' />
-            <column datatype='integer' name='availability_365' ordinal='71' />
-            <column datatype='date' name='calendar_last_scraped' ordinal='72' />
-            <column datatype='integer' name='number_of_reviews' ordinal='73' />
-            <column datatype='date' name='first_review' ordinal='74' />
-            <column datatype='date' name='last_review' ordinal='75' />
-            <column datatype='integer' name='review_scores_rating' ordinal='76' />
-            <column datatype='integer' name='review_scores_accuracy' ordinal='77' />
-            <column datatype='integer' name='review_scores_cleanliness' ordinal='78' />
-            <column datatype='integer' name='review_scores_checkin' ordinal='79' />
-            <column datatype='integer' name='review_scores_communication' ordinal='80' />
-            <column datatype='integer' name='review_scores_location' ordinal='81' />
-            <column datatype='integer' name='review_scores_value' ordinal='82' />
-            <column datatype='string' name='requires_license' ordinal='83' />
-            <column datatype='string' name='license' ordinal='84' />
-            <column datatype='string' name='jurisdiction_names' ordinal='85' />
-            <column datatype='string' name='instant_bookable' ordinal='86' />
-            <column datatype='string' name='cancellation_policy' ordinal='87' />
-            <column datatype='string' name='require_guest_profile_picture' ordinal='88' />
-            <column datatype='string' name='require_guest_phone_verification' ordinal='89' />
-            <column datatype='integer' name='calculated_host_listings_count' ordinal='90' />
-            <column datatype='real' name='reviews_per_month' ordinal='91' />
-          </columns>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Listings].[id]' />
+              <expression op='[Reviews].[listing_id]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[Listings].[id]' />
+                <expression op='[Calendar].[listing_id]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Listings' table='[Listings$]' type='table'>
+              <columns gridOrigin='A1:CN3819:no:A1:CN3819:0' header='yes' outcome='2'>
+                <column datatype='integer' name='id' ordinal='0' />
+                <column datatype='string' name='listing_url' ordinal='1' />
+                <column datatype='integer' name='scrape_id' ordinal='2' />
+                <column datatype='date' name='last_scraped' ordinal='3' />
+                <column datatype='string' name='name' ordinal='4' />
+                <column datatype='string' name='summary' ordinal='5' />
+                <column datatype='string' name='space' ordinal='6' />
+                <column datatype='string' name='description' ordinal='7' />
+                <column datatype='string' name='experiences_offered' ordinal='8' />
+                <column datatype='string' name='neighborhood_overview' ordinal='9' />
+                <column datatype='string' name='notes' ordinal='10' />
+                <column datatype='string' name='transit' ordinal='11' />
+                <column datatype='string' name='thumbnail_url' ordinal='12' />
+                <column datatype='string' name='medium_url' ordinal='13' />
+                <column datatype='string' name='picture_url' ordinal='14' />
+                <column datatype='string' name='xl_picture_url' ordinal='15' />
+                <column datatype='integer' name='host_id' ordinal='16' />
+                <column datatype='string' name='host_url' ordinal='17' />
+                <column datatype='string' name='host_name' ordinal='18' />
+                <column datatype='date' name='host_since' ordinal='19' />
+                <column datatype='string' name='host_location' ordinal='20' />
+                <column datatype='string' name='host_about' ordinal='21' />
+                <column datatype='string' name='host_response_time' ordinal='22' />
+                <column datatype='string' name='host_response_rate' ordinal='23' />
+                <column datatype='string' name='host_acceptance_rate' ordinal='24' />
+                <column datatype='string' name='host_is_superhost' ordinal='25' />
+                <column datatype='string' name='host_thumbnail_url' ordinal='26' />
+                <column datatype='string' name='host_picture_url' ordinal='27' />
+                <column datatype='string' name='host_neighbourhood' ordinal='28' />
+                <column datatype='integer' name='host_listings_count' ordinal='29' />
+                <column datatype='integer' name='host_total_listings_count' ordinal='30' />
+                <column datatype='string' name='host_verifications' ordinal='31' />
+                <column datatype='string' name='host_has_profile_pic' ordinal='32' />
+                <column datatype='string' name='host_identity_verified' ordinal='33' />
+                <column datatype='string' name='street' ordinal='34' />
+                <column datatype='string' name='neighbourhood' ordinal='35' />
+                <column datatype='string' name='neighbourhood_cleansed' ordinal='36' />
+                <column datatype='string' name='neighbourhood_group_cleansed' ordinal='37' />
+                <column datatype='string' name='city' ordinal='38' />
+                <column datatype='string' name='state' ordinal='39' />
+                <column datatype='integer' name='zipcode' ordinal='40' />
+                <column datatype='string' name='market' ordinal='41' />
+                <column datatype='string' name='smart_location' ordinal='42' />
+                <column datatype='string' name='country_code' ordinal='43' />
+                <column datatype='string' name='country' ordinal='44' />
+                <column datatype='real' name='latitude' ordinal='45' />
+                <column datatype='real' name='longitude' ordinal='46' />
+                <column datatype='string' name='is_location_exact' ordinal='47' />
+                <column datatype='string' name='property_type' ordinal='48' />
+                <column datatype='string' name='room_type' ordinal='49' />
+                <column datatype='integer' name='accommodates' ordinal='50' />
+                <column datatype='real' name='bathrooms' ordinal='51' />
+                <column datatype='integer' name='bedrooms' ordinal='52' />
+                <column datatype='integer' name='beds' ordinal='53' />
+                <column datatype='string' name='bed_type' ordinal='54' />
+                <column datatype='string' name='amenities' ordinal='55' />
+                <column datatype='integer' name='square_feet' ordinal='56' />
+                <column datatype='integer' name='price' ordinal='57' />
+                <column datatype='integer' name='weekly_price' ordinal='58' />
+                <column datatype='integer' name='monthly_price' ordinal='59' />
+                <column datatype='integer' name='security_deposit' ordinal='60' />
+                <column datatype='integer' name='cleaning_fee' ordinal='61' />
+                <column datatype='integer' name='guests_included' ordinal='62' />
+                <column datatype='integer' name='extra_people' ordinal='63' />
+                <column datatype='integer' name='minimum_nights' ordinal='64' />
+                <column datatype='integer' name='maximum_nights' ordinal='65' />
+                <column datatype='string' name='calendar_updated' ordinal='66' />
+                <column datatype='string' name='has_availability' ordinal='67' />
+                <column datatype='integer' name='availability_30' ordinal='68' />
+                <column datatype='integer' name='availability_60' ordinal='69' />
+                <column datatype='integer' name='availability_90' ordinal='70' />
+                <column datatype='integer' name='availability_365' ordinal='71' />
+                <column datatype='date' name='calendar_last_scraped' ordinal='72' />
+                <column datatype='integer' name='number_of_reviews' ordinal='73' />
+                <column datatype='date' name='first_review' ordinal='74' />
+                <column datatype='date' name='last_review' ordinal='75' />
+                <column datatype='integer' name='review_scores_rating' ordinal='76' />
+                <column datatype='integer' name='review_scores_accuracy' ordinal='77' />
+                <column datatype='integer' name='review_scores_cleanliness' ordinal='78' />
+                <column datatype='integer' name='review_scores_checkin' ordinal='79' />
+                <column datatype='integer' name='review_scores_communication' ordinal='80' />
+                <column datatype='integer' name='review_scores_location' ordinal='81' />
+                <column datatype='integer' name='review_scores_value' ordinal='82' />
+                <column datatype='string' name='requires_license' ordinal='83' />
+                <column datatype='string' name='license' ordinal='84' />
+                <column datatype='string' name='jurisdiction_names' ordinal='85' />
+                <column datatype='string' name='instant_bookable' ordinal='86' />
+                <column datatype='string' name='cancellation_policy' ordinal='87' />
+                <column datatype='string' name='require_guest_profile_picture' ordinal='88' />
+                <column datatype='string' name='require_guest_phone_verification' ordinal='89' />
+                <column datatype='integer' name='calculated_host_listings_count' ordinal='90' />
+                <column datatype='real' name='reviews_per_month' ordinal='91' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Calendar' table='[Calendar$]' type='table'>
+              <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='2'>
+                <column datatype='integer' name='listing_id' ordinal='0' />
+                <column datatype='date' name='date' ordinal='1' />
+                <column datatype='string' name='available' ordinal='2' />
+                <column datatype='integer' name='price' ordinal='3' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Reviews' table='[Reviews$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='listing_id' ordinal='0' />
+              <column datatype='integer' name='id' ordinal='1' />
+              <column datatype='date' name='date' ordinal='2' />
+              <column datatype='integer' name='reviewer_id' ordinal='3' />
+              <column datatype='string' name='reviewer_name' ordinal='4' />
+              <column datatype='string' name='comments' ordinal='5' />
+            </columns>
+          </relation>
         </relation>
+        <cols>
+          <map key='[accommodates]' value='[Listings].[accommodates]' />
+          <map key='[amenities]' value='[Listings].[amenities]' />
+          <map key='[availability_30]' value='[Listings].[availability_30]' />
+          <map key='[availability_365]' value='[Listings].[availability_365]' />
+          <map key='[availability_60]' value='[Listings].[availability_60]' />
+          <map key='[availability_90]' value='[Listings].[availability_90]' />
+          <map key='[available]' value='[Calendar].[available]' />
+          <map key='[bathrooms]' value='[Listings].[bathrooms]' />
+          <map key='[bed_type]' value='[Listings].[bed_type]' />
+          <map key='[bedrooms]' value='[Listings].[bedrooms]' />
+          <map key='[beds]' value='[Listings].[beds]' />
+          <map key='[calculated_host_listings_count]' value='[Listings].[calculated_host_listings_count]' />
+          <map key='[calendar_last_scraped]' value='[Listings].[calendar_last_scraped]' />
+          <map key='[calendar_updated]' value='[Listings].[calendar_updated]' />
+          <map key='[cancellation_policy]' value='[Listings].[cancellation_policy]' />
+          <map key='[city]' value='[Listings].[city]' />
+          <map key='[cleaning_fee]' value='[Listings].[cleaning_fee]' />
+          <map key='[comments]' value='[Reviews].[comments]' />
+          <map key='[country]' value='[Listings].[country]' />
+          <map key='[country_code]' value='[Listings].[country_code]' />
+          <map key='[date (Reviews)]' value='[Reviews].[date]' />
+          <map key='[date]' value='[Calendar].[date]' />
+          <map key='[description]' value='[Listings].[description]' />
+          <map key='[experiences_offered]' value='[Listings].[experiences_offered]' />
+          <map key='[extra_people]' value='[Listings].[extra_people]' />
+          <map key='[first_review]' value='[Listings].[first_review]' />
+          <map key='[guests_included]' value='[Listings].[guests_included]' />
+          <map key='[has_availability]' value='[Listings].[has_availability]' />
+          <map key='[host_about]' value='[Listings].[host_about]' />
+          <map key='[host_acceptance_rate]' value='[Listings].[host_acceptance_rate]' />
+          <map key='[host_has_profile_pic]' value='[Listings].[host_has_profile_pic]' />
+          <map key='[host_id]' value='[Listings].[host_id]' />
+          <map key='[host_identity_verified]' value='[Listings].[host_identity_verified]' />
+          <map key='[host_is_superhost]' value='[Listings].[host_is_superhost]' />
+          <map key='[host_listings_count]' value='[Listings].[host_listings_count]' />
+          <map key='[host_location]' value='[Listings].[host_location]' />
+          <map key='[host_name]' value='[Listings].[host_name]' />
+          <map key='[host_neighbourhood]' value='[Listings].[host_neighbourhood]' />
+          <map key='[host_picture_url]' value='[Listings].[host_picture_url]' />
+          <map key='[host_response_rate]' value='[Listings].[host_response_rate]' />
+          <map key='[host_response_time]' value='[Listings].[host_response_time]' />
+          <map key='[host_since]' value='[Listings].[host_since]' />
+          <map key='[host_thumbnail_url]' value='[Listings].[host_thumbnail_url]' />
+          <map key='[host_total_listings_count]' value='[Listings].[host_total_listings_count]' />
+          <map key='[host_url]' value='[Listings].[host_url]' />
+          <map key='[host_verifications]' value='[Listings].[host_verifications]' />
+          <map key='[id (Reviews)]' value='[Reviews].[id]' />
+          <map key='[id]' value='[Listings].[id]' />
+          <map key='[instant_bookable]' value='[Listings].[instant_bookable]' />
+          <map key='[is_location_exact]' value='[Listings].[is_location_exact]' />
+          <map key='[jurisdiction_names]' value='[Listings].[jurisdiction_names]' />
+          <map key='[last_review]' value='[Listings].[last_review]' />
+          <map key='[last_scraped]' value='[Listings].[last_scraped]' />
+          <map key='[latitude]' value='[Listings].[latitude]' />
+          <map key='[license]' value='[Listings].[license]' />
+          <map key='[listing_id (Reviews)]' value='[Reviews].[listing_id]' />
+          <map key='[listing_id]' value='[Calendar].[listing_id]' />
+          <map key='[listing_url]' value='[Listings].[listing_url]' />
+          <map key='[longitude]' value='[Listings].[longitude]' />
+          <map key='[market]' value='[Listings].[market]' />
+          <map key='[maximum_nights]' value='[Listings].[maximum_nights]' />
+          <map key='[medium_url]' value='[Listings].[medium_url]' />
+          <map key='[minimum_nights]' value='[Listings].[minimum_nights]' />
+          <map key='[monthly_price]' value='[Listings].[monthly_price]' />
+          <map key='[name]' value='[Listings].[name]' />
+          <map key='[neighborhood_overview]' value='[Listings].[neighborhood_overview]' />
+          <map key='[neighbourhood]' value='[Listings].[neighbourhood]' />
+          <map key='[neighbourhood_cleansed]' value='[Listings].[neighbourhood_cleansed]' />
+          <map key='[neighbourhood_group_cleansed]' value='[Listings].[neighbourhood_group_cleansed]' />
+          <map key='[notes]' value='[Listings].[notes]' />
+          <map key='[number_of_reviews]' value='[Listings].[number_of_reviews]' />
+          <map key='[picture_url]' value='[Listings].[picture_url]' />
+          <map key='[price (Calendar)]' value='[Calendar].[price]' />
+          <map key='[price]' value='[Listings].[price]' />
+          <map key='[property_type]' value='[Listings].[property_type]' />
+          <map key='[require_guest_phone_verification]' value='[Listings].[require_guest_phone_verification]' />
+          <map key='[require_guest_profile_picture]' value='[Listings].[require_guest_profile_picture]' />
+          <map key='[requires_license]' value='[Listings].[requires_license]' />
+          <map key='[review_scores_accuracy]' value='[Listings].[review_scores_accuracy]' />
+          <map key='[review_scores_checkin]' value='[Listings].[review_scores_checkin]' />
+          <map key='[review_scores_cleanliness]' value='[Listings].[review_scores_cleanliness]' />
+          <map key='[review_scores_communication]' value='[Listings].[review_scores_communication]' />
+          <map key='[review_scores_location]' value='[Listings].[review_scores_location]' />
+          <map key='[review_scores_rating]' value='[Listings].[review_scores_rating]' />
+          <map key='[review_scores_value]' value='[Listings].[review_scores_value]' />
+          <map key='[reviewer_id]' value='[Reviews].[reviewer_id]' />
+          <map key='[reviewer_name]' value='[Reviews].[reviewer_name]' />
+          <map key='[reviews_per_month]' value='[Listings].[reviews_per_month]' />
+          <map key='[room_type]' value='[Listings].[room_type]' />
+          <map key='[scrape_id]' value='[Listings].[scrape_id]' />
+          <map key='[security_deposit]' value='[Listings].[security_deposit]' />
+          <map key='[smart_location]' value='[Listings].[smart_location]' />
+          <map key='[space]' value='[Listings].[space]' />
+          <map key='[square_feet]' value='[Listings].[square_feet]' />
+          <map key='[state]' value='[Listings].[state]' />
+          <map key='[street]' value='[Listings].[street]' />
+          <map key='[summary]' value='[Listings].[summary]' />
+          <map key='[thumbnail_url]' value='[Listings].[thumbnail_url]' />
+          <map key='[transit]' value='[Listings].[transit]' />
+          <map key='[weekly_price]' value='[Listings].[weekly_price]' />
+          <map key='[xl_picture_url]' value='[Listings].[xl_picture_url]' />
+          <map key='[zipcode]' value='[Listings].[zipcode]' />
+        </cols>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -130,6 +270,34 @@
             <attributes>
               <attribute datatype='integer' name='context'>0</attribute>
               <attribute datatype='string' name='gridOrigin'>&quot;A1:CN3819:no:A1:CN3819:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Calendar]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10001:no:A1:D10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:0&quot;</attribute>
               <attribute datatype='boolean' name='header'>true</attribute>
               <attribute datatype='integer' name='outcome'>2</attribute>
             </attributes>
@@ -147,7 +315,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>listing_url</remote-name>
@@ -163,7 +331,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>scrape_id</remote-name>
@@ -178,7 +346,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>last_scraped</remote-name>
@@ -193,7 +361,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>name</remote-name>
@@ -209,7 +377,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>summary</remote-name>
@@ -225,7 +393,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>space</remote-name>
@@ -241,7 +409,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>description</remote-name>
@@ -257,7 +425,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>experiences_offered</remote-name>
@@ -273,7 +441,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>neighborhood_overview</remote-name>
@@ -289,7 +457,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>notes</remote-name>
@@ -305,7 +473,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>transit</remote-name>
@@ -321,7 +489,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>thumbnail_url</remote-name>
@@ -337,7 +505,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>medium_url</remote-name>
@@ -353,7 +521,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>picture_url</remote-name>
@@ -369,7 +537,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>xl_picture_url</remote-name>
@@ -385,7 +553,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_id</remote-name>
@@ -400,7 +568,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_url</remote-name>
@@ -416,7 +584,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_name</remote-name>
@@ -432,7 +600,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_since</remote-name>
@@ -447,7 +615,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_location</remote-name>
@@ -463,7 +631,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_about</remote-name>
@@ -479,7 +647,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_response_time</remote-name>
@@ -495,7 +663,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_response_rate</remote-name>
@@ -511,7 +679,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_acceptance_rate</remote-name>
@@ -527,7 +695,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_is_superhost</remote-name>
@@ -543,7 +711,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_thumbnail_url</remote-name>
@@ -559,7 +727,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_picture_url</remote-name>
@@ -575,7 +743,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_neighbourhood</remote-name>
@@ -591,7 +759,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_listings_count</remote-name>
@@ -606,7 +774,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_total_listings_count</remote-name>
@@ -621,7 +789,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_verifications</remote-name>
@@ -637,7 +805,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_has_profile_pic</remote-name>
@@ -653,7 +821,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>host_identity_verified</remote-name>
@@ -669,7 +837,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>street</remote-name>
@@ -685,7 +853,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>neighbourhood</remote-name>
@@ -701,7 +869,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>neighbourhood_cleansed</remote-name>
@@ -717,7 +885,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>neighbourhood_group_cleansed</remote-name>
@@ -733,7 +901,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>city</remote-name>
@@ -749,7 +917,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>state</remote-name>
@@ -765,7 +933,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>zipcode</remote-name>
@@ -780,7 +948,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>market</remote-name>
@@ -796,7 +964,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>smart_location</remote-name>
@@ -812,7 +980,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>country_code</remote-name>
@@ -828,7 +996,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>country</remote-name>
@@ -844,7 +1012,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>latitude</remote-name>
@@ -860,7 +1028,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>longitude</remote-name>
@@ -876,7 +1044,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>is_location_exact</remote-name>
@@ -892,7 +1060,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>property_type</remote-name>
@@ -908,7 +1076,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>room_type</remote-name>
@@ -924,7 +1092,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>accommodates</remote-name>
@@ -939,7 +1107,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>bathrooms</remote-name>
@@ -955,7 +1123,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>bedrooms</remote-name>
@@ -970,7 +1138,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>beds</remote-name>
@@ -985,7 +1153,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>bed_type</remote-name>
@@ -1001,7 +1169,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>amenities</remote-name>
@@ -1017,7 +1185,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>square_feet</remote-name>
@@ -1032,7 +1200,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>price</remote-name>
@@ -1047,7 +1215,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>weekly_price</remote-name>
@@ -1062,7 +1230,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>monthly_price</remote-name>
@@ -1077,7 +1245,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>security_deposit</remote-name>
@@ -1092,7 +1260,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>cleaning_fee</remote-name>
@@ -1107,7 +1275,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>guests_included</remote-name>
@@ -1122,7 +1290,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>extra_people</remote-name>
@@ -1137,7 +1305,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>minimum_nights</remote-name>
@@ -1152,7 +1320,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>maximum_nights</remote-name>
@@ -1167,7 +1335,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>calendar_updated</remote-name>
@@ -1183,7 +1351,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>has_availability</remote-name>
@@ -1199,7 +1367,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>availability_30</remote-name>
@@ -1214,7 +1382,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>availability_60</remote-name>
@@ -1229,7 +1397,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>availability_90</remote-name>
@@ -1244,7 +1412,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>availability_365</remote-name>
@@ -1259,7 +1427,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>calendar_last_scraped</remote-name>
@@ -1274,7 +1442,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>number_of_reviews</remote-name>
@@ -1289,7 +1457,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>first_review</remote-name>
@@ -1304,7 +1472,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>last_review</remote-name>
@@ -1319,7 +1487,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_rating</remote-name>
@@ -1334,7 +1502,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_accuracy</remote-name>
@@ -1349,7 +1517,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_cleanliness</remote-name>
@@ -1364,7 +1532,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_checkin</remote-name>
@@ -1379,7 +1547,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_communication</remote-name>
@@ -1394,7 +1562,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_location</remote-name>
@@ -1409,7 +1577,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>review_scores_value</remote-name>
@@ -1424,7 +1592,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>requires_license</remote-name>
@@ -1440,7 +1608,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>license</remote-name>
@@ -1456,7 +1624,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>jurisdiction_names</remote-name>
@@ -1472,7 +1640,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>instant_bookable</remote-name>
@@ -1488,7 +1656,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>cancellation_policy</remote-name>
@@ -1504,7 +1672,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>require_guest_profile_picture</remote-name>
@@ -1520,7 +1688,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>require_guest_phone_verification</remote-name>
@@ -1536,7 +1704,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>calculated_host_listings_count</remote-name>
@@ -1551,7 +1719,7 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>reviews_per_month</remote-name>
@@ -1567,18 +1735,172 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
-            <object-id>[Listings_4E0ECA246A4A435FA33642A0CA144269]</object-id>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listing_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[listing_id]</local-name>
+            <parent-name>[Calendar]</parent-name>
+            <remote-alias>listing_id</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Calendar]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>available</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[available]</local-name>
+            <parent-name>[Calendar]</parent-name>
+            <remote-alias>available</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price (Calendar)]</local-name>
+            <parent-name>[Calendar]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listing_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[listing_id (Reviews)]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>listing_id</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (Reviews)]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date (Reviews)]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviewer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reviewer_id]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>reviewer_id</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviewer_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[reviewer_name]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>reviewer_name</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[comments]</local-name>
+            <parent-name>[Reviews]</parent-name>
+            <remote-alias>comments</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Listings_2F4951662E504C3AA89FDF6E420E8DCB]</object-id>
           </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='Listings' datatype='table' name='[__tableau_internal_object_id__].[Listings_4E0ECA246A4A435FA33642A0CA144269]' role='measure' type='quantitative' />
+      <column caption='Listings' datatype='table' name='[__tableau_internal_object_id__].[Listings_2F4951662E504C3AA89FDF6E420E8DCB]' role='measure' type='quantitative' />
       <column caption='Accommodates' datatype='integer' name='[accommodates]' role='measure' type='quantitative' />
       <column caption='Amenities' datatype='string' name='[amenities]' role='dimension' type='nominal' />
       <column caption='Availability 30' datatype='integer' name='[availability_30]' role='measure' type='quantitative' />
       <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
       <column caption='Availability 60' datatype='integer' name='[availability_60]' role='measure' type='quantitative' />
       <column caption='Availability 90' datatype='integer' name='[availability_90]' role='measure' type='quantitative' />
+      <column caption='Available' datatype='string' name='[available]' role='dimension' type='nominal' />
       <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
       <column caption='Bed Type' datatype='string' name='[bed_type]' role='dimension' type='nominal' />
       <column caption='Bedrooms' datatype='integer' name='[bedrooms]' role='measure' type='quantitative' />
@@ -1589,8 +1911,10 @@
       <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
       <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column caption='Cleaning Fee' datatype='integer' name='[cleaning_fee]' role='measure' type='quantitative' />
+      <column caption='Comments' datatype='string' name='[comments]' role='dimension' type='nominal' />
       <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
       <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
       <column caption='Experiences Offered' datatype='string' name='[experiences_offered]' role='dimension' type='nominal' />
       <column caption='Extra People' datatype='integer' name='[extra_people]' role='measure' type='quantitative' />
@@ -1615,6 +1939,7 @@
       <column caption='Host Total Listings Count' datatype='integer' name='[host_total_listings_count]' role='measure' type='quantitative' />
       <column caption='Host Url' datatype='string' name='[host_url]' role='dimension' type='nominal' />
       <column caption='Host Verifications' datatype='string' name='[host_verifications]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[id (Reviews)]' role='dimension' type='ordinal' />
       <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
       <column caption='Instant Bookable' datatype='string' name='[instant_bookable]' role='dimension' type='nominal' />
       <column caption='Is Location Exact' datatype='string' name='[is_location_exact]' role='dimension' type='nominal' />
@@ -1623,6 +1948,8 @@
       <column caption='Last Scraped' datatype='date' name='[last_scraped]' role='dimension' type='ordinal' />
       <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
       <column caption='License' datatype='string' name='[license]' role='dimension' type='nominal' />
+      <column caption='listing id (Reviews)' datatype='integer' name='[listing_id (Reviews)]' role='dimension' type='ordinal' />
+      <column caption='Listing Id' datatype='integer' name='[listing_id]' role='dimension' type='ordinal' />
       <column caption='Listing Url' datatype='string' name='[listing_url]' role='dimension' type='nominal' />
       <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
       <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
@@ -1650,6 +1977,8 @@
       <column caption='Review Scores Location' datatype='integer' name='[review_scores_location]' role='measure' type='quantitative' />
       <column caption='Review Scores Rating' datatype='integer' name='[review_scores_rating]' role='measure' type='quantitative' />
       <column caption='Review Scores Value' datatype='integer' name='[review_scores_value]' role='measure' type='quantitative' />
+      <column caption='Reviewer Id' datatype='integer' name='[reviewer_id]' role='dimension' type='ordinal' />
+      <column caption='Reviewer Name' datatype='string' name='[reviewer_name]' role='dimension' type='nominal' />
       <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
       <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
       <column caption='Scrape Id' datatype='integer' name='[scrape_id]' role='dimension' type='ordinal' />
@@ -1665,109 +1994,147 @@
       <column caption='Weekly Price' datatype='integer' name='[weekly_price]' role='measure' type='quantitative' />
       <column caption='Xl Picture Url' datatype='string' name='[xl_picture_url]' role='dimension' type='nominal' />
       <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
+      <filter class='categorical' column='[yr:date:ok]' filter-group='2'>
+        <groupfilter function='member' level='[yr:date:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
       <object-graph>
         <objects>
-          <object caption='Listings' id='Listings_4E0ECA246A4A435FA33642A0CA144269'>
+          <object caption='Listings' id='Listings_2F4951662E504C3AA89FDF6E420E8DCB'>
             <properties context=''>
-              <relation connection='excel-direct.0lp3s2l16d33hk13dom511awmc9w' name='Listings' table='[Listings$]' type='table'>
-                <columns gridOrigin='A1:CN3819:no:A1:CN3819:0' header='yes' outcome='2'>
-                  <column datatype='integer' name='id' ordinal='0' />
-                  <column datatype='string' name='listing_url' ordinal='1' />
-                  <column datatype='integer' name='scrape_id' ordinal='2' />
-                  <column datatype='date' name='last_scraped' ordinal='3' />
-                  <column datatype='string' name='name' ordinal='4' />
-                  <column datatype='string' name='summary' ordinal='5' />
-                  <column datatype='string' name='space' ordinal='6' />
-                  <column datatype='string' name='description' ordinal='7' />
-                  <column datatype='string' name='experiences_offered' ordinal='8' />
-                  <column datatype='string' name='neighborhood_overview' ordinal='9' />
-                  <column datatype='string' name='notes' ordinal='10' />
-                  <column datatype='string' name='transit' ordinal='11' />
-                  <column datatype='string' name='thumbnail_url' ordinal='12' />
-                  <column datatype='string' name='medium_url' ordinal='13' />
-                  <column datatype='string' name='picture_url' ordinal='14' />
-                  <column datatype='string' name='xl_picture_url' ordinal='15' />
-                  <column datatype='integer' name='host_id' ordinal='16' />
-                  <column datatype='string' name='host_url' ordinal='17' />
-                  <column datatype='string' name='host_name' ordinal='18' />
-                  <column datatype='date' name='host_since' ordinal='19' />
-                  <column datatype='string' name='host_location' ordinal='20' />
-                  <column datatype='string' name='host_about' ordinal='21' />
-                  <column datatype='string' name='host_response_time' ordinal='22' />
-                  <column datatype='string' name='host_response_rate' ordinal='23' />
-                  <column datatype='string' name='host_acceptance_rate' ordinal='24' />
-                  <column datatype='string' name='host_is_superhost' ordinal='25' />
-                  <column datatype='string' name='host_thumbnail_url' ordinal='26' />
-                  <column datatype='string' name='host_picture_url' ordinal='27' />
-                  <column datatype='string' name='host_neighbourhood' ordinal='28' />
-                  <column datatype='integer' name='host_listings_count' ordinal='29' />
-                  <column datatype='integer' name='host_total_listings_count' ordinal='30' />
-                  <column datatype='string' name='host_verifications' ordinal='31' />
-                  <column datatype='string' name='host_has_profile_pic' ordinal='32' />
-                  <column datatype='string' name='host_identity_verified' ordinal='33' />
-                  <column datatype='string' name='street' ordinal='34' />
-                  <column datatype='string' name='neighbourhood' ordinal='35' />
-                  <column datatype='string' name='neighbourhood_cleansed' ordinal='36' />
-                  <column datatype='string' name='neighbourhood_group_cleansed' ordinal='37' />
-                  <column datatype='string' name='city' ordinal='38' />
-                  <column datatype='string' name='state' ordinal='39' />
-                  <column datatype='integer' name='zipcode' ordinal='40' />
-                  <column datatype='string' name='market' ordinal='41' />
-                  <column datatype='string' name='smart_location' ordinal='42' />
-                  <column datatype='string' name='country_code' ordinal='43' />
-                  <column datatype='string' name='country' ordinal='44' />
-                  <column datatype='real' name='latitude' ordinal='45' />
-                  <column datatype='real' name='longitude' ordinal='46' />
-                  <column datatype='string' name='is_location_exact' ordinal='47' />
-                  <column datatype='string' name='property_type' ordinal='48' />
-                  <column datatype='string' name='room_type' ordinal='49' />
-                  <column datatype='integer' name='accommodates' ordinal='50' />
-                  <column datatype='real' name='bathrooms' ordinal='51' />
-                  <column datatype='integer' name='bedrooms' ordinal='52' />
-                  <column datatype='integer' name='beds' ordinal='53' />
-                  <column datatype='string' name='bed_type' ordinal='54' />
-                  <column datatype='string' name='amenities' ordinal='55' />
-                  <column datatype='integer' name='square_feet' ordinal='56' />
-                  <column datatype='integer' name='price' ordinal='57' />
-                  <column datatype='integer' name='weekly_price' ordinal='58' />
-                  <column datatype='integer' name='monthly_price' ordinal='59' />
-                  <column datatype='integer' name='security_deposit' ordinal='60' />
-                  <column datatype='integer' name='cleaning_fee' ordinal='61' />
-                  <column datatype='integer' name='guests_included' ordinal='62' />
-                  <column datatype='integer' name='extra_people' ordinal='63' />
-                  <column datatype='integer' name='minimum_nights' ordinal='64' />
-                  <column datatype='integer' name='maximum_nights' ordinal='65' />
-                  <column datatype='string' name='calendar_updated' ordinal='66' />
-                  <column datatype='string' name='has_availability' ordinal='67' />
-                  <column datatype='integer' name='availability_30' ordinal='68' />
-                  <column datatype='integer' name='availability_60' ordinal='69' />
-                  <column datatype='integer' name='availability_90' ordinal='70' />
-                  <column datatype='integer' name='availability_365' ordinal='71' />
-                  <column datatype='date' name='calendar_last_scraped' ordinal='72' />
-                  <column datatype='integer' name='number_of_reviews' ordinal='73' />
-                  <column datatype='date' name='first_review' ordinal='74' />
-                  <column datatype='date' name='last_review' ordinal='75' />
-                  <column datatype='integer' name='review_scores_rating' ordinal='76' />
-                  <column datatype='integer' name='review_scores_accuracy' ordinal='77' />
-                  <column datatype='integer' name='review_scores_cleanliness' ordinal='78' />
-                  <column datatype='integer' name='review_scores_checkin' ordinal='79' />
-                  <column datatype='integer' name='review_scores_communication' ordinal='80' />
-                  <column datatype='integer' name='review_scores_location' ordinal='81' />
-                  <column datatype='integer' name='review_scores_value' ordinal='82' />
-                  <column datatype='string' name='requires_license' ordinal='83' />
-                  <column datatype='string' name='license' ordinal='84' />
-                  <column datatype='string' name='jurisdiction_names' ordinal='85' />
-                  <column datatype='string' name='instant_bookable' ordinal='86' />
-                  <column datatype='string' name='cancellation_policy' ordinal='87' />
-                  <column datatype='string' name='require_guest_profile_picture' ordinal='88' />
-                  <column datatype='string' name='require_guest_phone_verification' ordinal='89' />
-                  <column datatype='integer' name='calculated_host_listings_count' ordinal='90' />
-                  <column datatype='real' name='reviews_per_month' ordinal='91' />
-                </columns>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Listings].[id]' />
+                    <expression op='[Reviews].[listing_id]' />
+                  </expression>
+                </clause>
+                <relation join='inner' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[Listings].[id]' />
+                      <expression op='[Calendar].[listing_id]' />
+                    </expression>
+                  </clause>
+                  <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Listings' table='[Listings$]' type='table'>
+                    <columns gridOrigin='A1:CN3819:no:A1:CN3819:0' header='yes' outcome='2'>
+                      <column datatype='integer' name='id' ordinal='0' />
+                      <column datatype='string' name='listing_url' ordinal='1' />
+                      <column datatype='integer' name='scrape_id' ordinal='2' />
+                      <column datatype='date' name='last_scraped' ordinal='3' />
+                      <column datatype='string' name='name' ordinal='4' />
+                      <column datatype='string' name='summary' ordinal='5' />
+                      <column datatype='string' name='space' ordinal='6' />
+                      <column datatype='string' name='description' ordinal='7' />
+                      <column datatype='string' name='experiences_offered' ordinal='8' />
+                      <column datatype='string' name='neighborhood_overview' ordinal='9' />
+                      <column datatype='string' name='notes' ordinal='10' />
+                      <column datatype='string' name='transit' ordinal='11' />
+                      <column datatype='string' name='thumbnail_url' ordinal='12' />
+                      <column datatype='string' name='medium_url' ordinal='13' />
+                      <column datatype='string' name='picture_url' ordinal='14' />
+                      <column datatype='string' name='xl_picture_url' ordinal='15' />
+                      <column datatype='integer' name='host_id' ordinal='16' />
+                      <column datatype='string' name='host_url' ordinal='17' />
+                      <column datatype='string' name='host_name' ordinal='18' />
+                      <column datatype='date' name='host_since' ordinal='19' />
+                      <column datatype='string' name='host_location' ordinal='20' />
+                      <column datatype='string' name='host_about' ordinal='21' />
+                      <column datatype='string' name='host_response_time' ordinal='22' />
+                      <column datatype='string' name='host_response_rate' ordinal='23' />
+                      <column datatype='string' name='host_acceptance_rate' ordinal='24' />
+                      <column datatype='string' name='host_is_superhost' ordinal='25' />
+                      <column datatype='string' name='host_thumbnail_url' ordinal='26' />
+                      <column datatype='string' name='host_picture_url' ordinal='27' />
+                      <column datatype='string' name='host_neighbourhood' ordinal='28' />
+                      <column datatype='integer' name='host_listings_count' ordinal='29' />
+                      <column datatype='integer' name='host_total_listings_count' ordinal='30' />
+                      <column datatype='string' name='host_verifications' ordinal='31' />
+                      <column datatype='string' name='host_has_profile_pic' ordinal='32' />
+                      <column datatype='string' name='host_identity_verified' ordinal='33' />
+                      <column datatype='string' name='street' ordinal='34' />
+                      <column datatype='string' name='neighbourhood' ordinal='35' />
+                      <column datatype='string' name='neighbourhood_cleansed' ordinal='36' />
+                      <column datatype='string' name='neighbourhood_group_cleansed' ordinal='37' />
+                      <column datatype='string' name='city' ordinal='38' />
+                      <column datatype='string' name='state' ordinal='39' />
+                      <column datatype='integer' name='zipcode' ordinal='40' />
+                      <column datatype='string' name='market' ordinal='41' />
+                      <column datatype='string' name='smart_location' ordinal='42' />
+                      <column datatype='string' name='country_code' ordinal='43' />
+                      <column datatype='string' name='country' ordinal='44' />
+                      <column datatype='real' name='latitude' ordinal='45' />
+                      <column datatype='real' name='longitude' ordinal='46' />
+                      <column datatype='string' name='is_location_exact' ordinal='47' />
+                      <column datatype='string' name='property_type' ordinal='48' />
+                      <column datatype='string' name='room_type' ordinal='49' />
+                      <column datatype='integer' name='accommodates' ordinal='50' />
+                      <column datatype='real' name='bathrooms' ordinal='51' />
+                      <column datatype='integer' name='bedrooms' ordinal='52' />
+                      <column datatype='integer' name='beds' ordinal='53' />
+                      <column datatype='string' name='bed_type' ordinal='54' />
+                      <column datatype='string' name='amenities' ordinal='55' />
+                      <column datatype='integer' name='square_feet' ordinal='56' />
+                      <column datatype='integer' name='price' ordinal='57' />
+                      <column datatype='integer' name='weekly_price' ordinal='58' />
+                      <column datatype='integer' name='monthly_price' ordinal='59' />
+                      <column datatype='integer' name='security_deposit' ordinal='60' />
+                      <column datatype='integer' name='cleaning_fee' ordinal='61' />
+                      <column datatype='integer' name='guests_included' ordinal='62' />
+                      <column datatype='integer' name='extra_people' ordinal='63' />
+                      <column datatype='integer' name='minimum_nights' ordinal='64' />
+                      <column datatype='integer' name='maximum_nights' ordinal='65' />
+                      <column datatype='string' name='calendar_updated' ordinal='66' />
+                      <column datatype='string' name='has_availability' ordinal='67' />
+                      <column datatype='integer' name='availability_30' ordinal='68' />
+                      <column datatype='integer' name='availability_60' ordinal='69' />
+                      <column datatype='integer' name='availability_90' ordinal='70' />
+                      <column datatype='integer' name='availability_365' ordinal='71' />
+                      <column datatype='date' name='calendar_last_scraped' ordinal='72' />
+                      <column datatype='integer' name='number_of_reviews' ordinal='73' />
+                      <column datatype='date' name='first_review' ordinal='74' />
+                      <column datatype='date' name='last_review' ordinal='75' />
+                      <column datatype='integer' name='review_scores_rating' ordinal='76' />
+                      <column datatype='integer' name='review_scores_accuracy' ordinal='77' />
+                      <column datatype='integer' name='review_scores_cleanliness' ordinal='78' />
+                      <column datatype='integer' name='review_scores_checkin' ordinal='79' />
+                      <column datatype='integer' name='review_scores_communication' ordinal='80' />
+                      <column datatype='integer' name='review_scores_location' ordinal='81' />
+                      <column datatype='integer' name='review_scores_value' ordinal='82' />
+                      <column datatype='string' name='requires_license' ordinal='83' />
+                      <column datatype='string' name='license' ordinal='84' />
+                      <column datatype='string' name='jurisdiction_names' ordinal='85' />
+                      <column datatype='string' name='instant_bookable' ordinal='86' />
+                      <column datatype='string' name='cancellation_policy' ordinal='87' />
+                      <column datatype='string' name='require_guest_profile_picture' ordinal='88' />
+                      <column datatype='string' name='require_guest_phone_verification' ordinal='89' />
+                      <column datatype='integer' name='calculated_host_listings_count' ordinal='90' />
+                      <column datatype='real' name='reviews_per_month' ordinal='91' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Calendar' table='[Calendar$]' type='table'>
+                    <columns gridOrigin='A1:D10001:no:A1:D10001:0' header='yes' outcome='2'>
+                      <column datatype='integer' name='listing_id' ordinal='0' />
+                      <column datatype='date' name='date' ordinal='1' />
+                      <column datatype='string' name='available' ordinal='2' />
+                      <column datatype='integer' name='price' ordinal='3' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='excel-direct.04mtnr81s13p8i0zxg6qj0m2ewe2' name='Reviews' table='[Reviews$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+                    <column datatype='integer' name='listing_id' ordinal='0' />
+                    <column datatype='integer' name='id' ordinal='1' />
+                    <column datatype='date' name='date' ordinal='2' />
+                    <column datatype='integer' name='reviewer_id' ordinal='3' />
+                    <column datatype='string' name='reviewer_name' ordinal='4' />
+                    <column datatype='string' name='comments' ordinal='5' />
+                  </columns>
+                </relation>
               </relation>
             </properties>
           </object>
@@ -1779,7 +2146,27 @@
     <worksheet name='Sheet 1'>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='Listings+ (Tableau Full Project)' name='federated.09w1hpr02mo5hx1fmg5bd0b87kiq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09w1hpr02mo5hx1fmg5bd0b87kiq'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[none:zipcode:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:zipcode:ok]' />
+              <groupfilter function='member' level='[none:zipcode:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[none:zipcode:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[avg:price:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[none:zipcode:ok]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style />
@@ -1789,12 +2176,17 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows />
-        <cols />
+        <rows>[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[avg:price:qk]</rows>
+        <cols>[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[none:zipcode:ok]</cols>
       </table>
-      <simple-id uuid='{F95D9464-70EC-4AC7-83FC-137B2D90A602}' />
+      <simple-id uuid='{84E88B4D-0797-45BC-BC55-EBF70520D238}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
@@ -1819,23 +2211,86 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{71ABF8DB-7C95-4B20-BBE2-9AD77BE6C82A}' />
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09w1hpr02mo5hx1fmg5bd0b87kiq].[none:zipcode:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F553C5AD-BD46-451B-AD40-38AF5F53D74E}' />
     </window>
   </windows>
   <thumbnails>
     <thumbnail height='192' name='Sheet 1' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
-      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
-      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
-      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
-      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
-      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
-      fBUOM1sAAAAASUVORK5CYII=
+      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
+      LF7nAAAAAElFTkSuQmCC
     </thumbnail>
   </thumbnails>
 </workbook>
